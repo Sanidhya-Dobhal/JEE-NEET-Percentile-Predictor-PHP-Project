@@ -24,6 +24,8 @@ if(!$con)
     <link rel ="stylesheet" href ="sub_marks.css">
 </head>
 <body>
+    <div style = "height:100vh; width:100vw; position:absolute; z-index:-1; background-color:rgba(0,0,0,0.25)">
+    </div>
     <div style ="width:90vw; ;margin:auto; height:16vh;">
     
     </div>

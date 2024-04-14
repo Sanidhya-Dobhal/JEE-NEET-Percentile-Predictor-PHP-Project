@@ -20,7 +20,8 @@
     <link rel ="Stylesheet" href ="home_style.css">
 </head>
 <body>
-    <div >
+<div style = 'height:100vh; width:100vw; position:absolute; z-index:-1; background-color:rgba(0,0,0,0.25)'></div>
+    <div>
         <div style ="height:0.003vh;">
 
         </div>
@@ -40,7 +41,8 @@ if(!$con)
     $sql ="SELECT f_name from Cand_reg where Reg_num = '$id'";
     $result=mysqli_query($con,$sql);
     $row = mysqli_fetch_assoc($result);
-    echo "<p id ='Greet'style='text-align:center; color:rgb(255,255,255)'><b>welcome  " .$row['f_name'] ." !</b></p>";
+    echo "
+    <p id ='Greet'style='text-align:center; color:rgb(255,255,255)'><b>welcome  " .$row['f_name'] ." !</b></p>";
     ?>
 </div>
     <div id ="parent">

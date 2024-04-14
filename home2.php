@@ -20,6 +20,8 @@
     <link rel ="Stylesheet" href ="home_style.css">
 </head>
 <body>
+<div style = "height:100vh; width:100vw; position:absolute; z-index:-1; background-color:rgba(0,0,0,0.25)">
+</div>
     <div >
         <div style ="height:0.003vh;">
 

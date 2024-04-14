@@ -18,9 +18,9 @@ input
     width:30vw; 
     margin:auto;
     text-align:center; 
-    border:4px outset;
     animation-name:animate;
     animation-duration: 1s;
+    padding:16px;
 }
 @keyframes animate
 {

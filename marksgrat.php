@@ -9,6 +9,8 @@ if(!$con)
 {
     die("Connection failed due to :".mysqli_connect_error());
 }
+echo"<div style = 'height:100vh; width:100vw; position:absolute; z-index:-1; background-color:rgba(0,0,0,0.25)'>
+</div>";
 $phy =$_POST['physics'];
 $chem =$_POST['chem'];
 $opsub =$_POST['opsub'];
@@ -110,6 +112,8 @@ else{
         }
         else{
             echo"
+            <div style = 'height:100vh; width:100vw; position:absolute; z-index:-1; background-color:rgba(0,0,0,0.25)'>
+            </div>
             <div style ='width:90vw; ;margin:auto; height:16vh;'>
         </div>
         <div id ='formcont'>
@@ -132,5 +136,6 @@ else{
     <title>Marks entered!</title>
 </head>
 <body>
+    
 </body>
 </html>

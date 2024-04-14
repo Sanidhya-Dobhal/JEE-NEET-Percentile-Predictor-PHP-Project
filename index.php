@@ -23,7 +23,7 @@
     }
     else
     {
-        echo "<div id ='form_cont2'>
+        echo "<div id ='form_cont2' class = form_cont_comm>
         <h1 style='text-align:center;'>Log-in</h1>
         <p style ='color:#d93025;'><b>Incorrect credentials, please try again</b></p>
             <div style='height:0.5vh'>

@@ -15,7 +15,9 @@
     $r = mysqli_query($con,$sq);
     $roo = mysqli_fetch_assoc($r);
     $Exam =$roo['Exam'];
-    echo "<div style ='height:20px'>
+    echo " <div style = 'height:100vh; width:100vw; position:absolute; z-index:-1; background-color:rgba(0,0,0,0.25)'>
+    </div>
+    <div style ='height:20px'>
             </div>";
     //For JEE Students
     if($Exam =="JEE")
@@ -26,7 +28,7 @@
     $nul = $r['count(Reg_num)'];
     if($nul==0)
     {
-        echo"<p style ='text-align:center; color:darkred;' class ='quali'>OOPS !! You have not entered your marks</p>";
+        echo"<p style ='text-align:center; color:ff3d3d; text-shadow: 1px 1px #000000; ' class ='quali'>OOPS !! You have not entered your marks</p>";
         echo"<div style = 'position:relative;background-color:darkred;margin-left:auto;margin-right:auto;opacity:0;' id ='line'>
         </div>";
     }
@@ -46,7 +48,7 @@
     $percentile = (1-($rank/$tot_cand))*100;
     if($percentile<90)
     {
-        echo "<p class = 'quali' style ='text-align:center;color:#ab1111;'><b>Sorry, you will not likely qualify JEE</b></p>";
+        echo "<p class = 'quali' style ='text-align:center; color:ff3d3d; text-shadow: 1px 1px #000000;'><b>Sorry, you will not likely qualify JEE</b></p>";
     }
     else
     {
